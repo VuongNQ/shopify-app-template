@@ -16,7 +16,7 @@
   "trustedDependencies": [
     "@shopify/plugin-cloudflare"
   ],
-  "author": "vuong",
+  "author": "vuongNQ",
   "private": true,
   "workspaces": [
     "extensions/*"
