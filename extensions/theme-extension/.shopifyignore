@@ -1,0 +1,12 @@
+node_modules/*
+assets/*.json
+frontend/*
+translate/*
+package.json
+vite.config.ts
+tsconfig.node.json
+tsconfig.app.json
+deployPagePreview.cjs
+.eslintrc.cjs
+index.html
+.env*

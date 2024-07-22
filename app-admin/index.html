@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <title>Countdown</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="shopify-api-key" content="%VITE_SHOPIFY_CLIENT_ID%" />
+    <script src="https://cdn.shopify.com/shopifycloud/app-bridge.js"></script>
+  </head>
+
+  <body>
+    <img
+      width="99999"
+      height="99999"
+      id="img-lazy-page"
+      style=" pointer-events: none; position: absolute; top: 0; display: none; left: 0; width: 99vw; height: 99vh; max-width: 99vw; max-height: 99vh;"
+      src="https://cdn.shopify.com/s/files/1/0815/4896/8227/files/8HNqsSBrj7QjAFgKn2td1r97lJrnDC6S1prVe0M3.png?v=1697603661"
+      onerror="this.style.display = 'none'"
+    />
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script type="text/javascript">
+      setTimeout(() => {
+        const imgPage = document.getElementById("img-lazy-page");
+        if (imgPage) imgPage.style.display = "block";
+      }, 100);
+    </script>
+  </body>
+</html>
